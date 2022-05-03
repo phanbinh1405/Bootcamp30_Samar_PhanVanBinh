@@ -88,6 +88,10 @@
             </ul>
             <button class="btn-main">Get a quote</button>
           </nav>
+
+          <div class="navbar__toggle btn-main">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </div>
     </header>
@@ -908,6 +912,17 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+         breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          996 : {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        }
       });
 
       // SCROLL TO TOP
